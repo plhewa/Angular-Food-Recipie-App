@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="col-md-5">
+<app-recipie-list></app-recipie-list>
+    </div>
+    <!-- <div class="col-md-7">
+        <app-recipie-details
+        *ngIf = "selectedRecipie ; else infoText"
+        [recipie] = "selectedRecipie"
+        ></app-recipie-details>
+
+        <ng-template #infoText>
+            <p>
+                Please Select a Recipie
+            </p>
+        </ng-template>
+    </div> -->
+    <div class="col-md-7">
+        <router-outlet></router-outlet>
+        </div>
+</div>
